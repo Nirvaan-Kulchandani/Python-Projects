@@ -8,11 +8,8 @@ def Calculate_BMI(weight_kg, height_m):
     BMI = weight_kg/(height_m**2)
     return round(BMI, 1)
 
-weight = float(input("Enter your weight in KiloGrams: "))
-height = float(input("Enter your height in CentiMetres: "))
-
-weight_kg = weight
-height_m = (height/100)
+weight_kg = float(input("Enter your weight in KiloGrams: "))
+height_m = float(input("Enter your height in CentiMetres: "))/100
 
 BMI = Calculate_BMI(weight_kg, height_m)
 
